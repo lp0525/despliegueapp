@@ -41,7 +41,8 @@
 		// Redirecciona A La Pagina FormularioLogin.html				
 		echo '<html>';
 		echo '<head>';
-		echo '<meta http-equiv="REFRESH" content="0;url=index.html">';
+		echo '<p>No validó las contrasñas</p>'
+		//echo '<meta http-equiv="REFRESH" content="0;url=index.html">';
 		echo '</head>';
 		echo '</html>';	
 	}
