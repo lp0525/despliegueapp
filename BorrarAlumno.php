@@ -20,7 +20,7 @@
 	mysqli_select_db($conexion, "alumnosDB");
 	
 	// Crear Una Instruccion SQL Para ELIMINAR Registros
-	$sql =  "DELETE FROM Alumnos WHERE NControl=$ncontrol";
+	$sql =  "DELETE FROM alumnos WHERE ncontrol=$ncontrol";
 		
 	// Elimina Un Registro, Regresa 1 Si Elimino Correctamente y 0 En Caso Contrario
 	$elimino = mysqli_query($conexion, $sql);
