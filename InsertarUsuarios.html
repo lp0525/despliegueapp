@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Documento sin t&iacute;tulo</title>
+  <style type="text/css">
+      .Estilo1 {
+      font-size: 24px;
+      color: #000099;
+    }
+  </style>
+</head>
+
+<body>
+  <div align="center">
+    <p class="Estilo1">
+      <<< Insertar Usuarios>>>
+    </p>
+  </div>
+  <form id="form1" name="form1" method="post" action="GuardarUsuario.php">
+    <table width="50%" border="0" align="center">
+      <tr>
+        <td colspan="2">
+          <hr>
+        </td>
+      </tr>
+      <tr>
+        <td align="right">Nombre Del Usuario:</td>
+        <td><label>
+            <input name="txtUsuario" type="text" id="txtUsuario" size="50" maxlength="15">
+          </label></td>
+      </tr>
+      <tr>
+        <td align="right">Password:</td>
+        <td><label>
+            <input name="txtClave" type="password" id="txtClave" size="50" maxlength="8">
+          </label></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <hr>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><label>
+            <input type="submit" name="Submit" value="Guardar">
+            <br>
+          </label>
+          <hr>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+
+</html>

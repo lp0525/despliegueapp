@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Introduce Usuario y Contraseña Para iniciar Sesion</h1>
+  <form id="form1" name="form1" method="post" action="login.php">
+    <table width="50%" border="0" align="center">
+      <tr>
+        <td colspan="2">
+          <hr>
+        </td>
+      </tr>
+      <tr>
+        <td align="right">Nombre Del Usuario:</td>
+        <td><label>
+            <input name="txtUsuario" type="text" id="txtUsuario" size="50" maxlength="15">
+          </label></td>
+      </tr>
+      <tr>
+        <td align="right">Password:</td>
+        <td><label>
+            <input name="txtClave" type="password" id="txtClave" size="50" maxlength="8">
+          </label></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <hr>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><label>
+            <input type="submit" name="Submit" value="Login">
+            <br>
+          </label>
+          <hr>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Si No Tienes Cuenta De Acceso
+          <a href="InsertarUsuarios.html">Registrate Aquí</a>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+
+</html>
