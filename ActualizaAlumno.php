@@ -56,7 +56,7 @@
 	}
 	
 	// Crear La Conexion a MySQL
-	$conexion = mysqli_connect("localhost", "root", "");
+	$conexion = mysqli_connect("localhost", "root", "root");
 	
 	// Seleccionar La Base De Datos
 	mysqli_select_db($conexion, "alumnosDB");
