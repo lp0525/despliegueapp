@@ -1,0 +1,7 @@
+---
+mysql_root_password: " "
+app_user: "lp_ubuntu"
+http_host: "lvaldez.com"
+http_conf: "lvaldez.com.conf"
+http_port: "80"
+disable_default: true
