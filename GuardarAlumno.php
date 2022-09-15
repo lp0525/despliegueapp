@@ -61,7 +61,7 @@
 	mysqli_select_db($conexion, "alumnosDB");
 	
 	// Crear Una Instruccion SQL Para INSERTAR Registros
-	$sql =  "INSERT INTO Alumnos (NControl,Nombre,Especialidad,Grado,Grupo,Turno,Pasatiempo1,Pasatiempo2,Pasatiempo3,Pasatiempo4,Observaciones)".
+	$sql =  "INSERT INTO alumnos (ncontrol,nombre,especialidad,grado,grupo,turno,pasatiempo1,pasatiempo2,pasatiempo3,pasatiempo4,observaciones)".
 			"VALUES ($ncontrol,'$nombre',$especialidad,$grado,$grupo,$turno,$pasatiempo1,$pasatiempo2,$pasatiempo3,$pasatiempo4,'$observaciones')";
 		
 	// Inserta Un Registro, Regresa 1 Si Inserto Correctamente y 0 En Caso Contrario
