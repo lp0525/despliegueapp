@@ -30,7 +30,7 @@
 	mysqli_select_db($conexion, "alumnosDB");
 	
 	// Crear Una Consulta SQL
-	$sql = "SELECT * FROM Alumnos WHERE ncontrol=$ncontrol";
+	$sql = "SELECT * FROM alumnos WHERE ncontrol=$ncontrol";
 	
 	// Ejecuta La Consulta Guardando El Resultado En La Variable $registros
 	$registros = mysqli_query($conexion, $sql);
