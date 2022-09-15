@@ -62,18 +62,18 @@
 	mysqli_select_db($conexion, "alumnosDB");
 	
 	// Crear Una Instruccion SQL Para ACTULIZAR Registros
-	$sql = "UPDATE Alumnos SET 
-			Nombre='$nombre',
-			Especialidad=$especialidad,
-			Grado=$grado,
-			Grupo=$grupo,
-			Turno=$turno,
-			Pasatiempo1=$pasatiempo1,
-			Pasatiempo2=$pasatiempo2,
-			Pasatiempo3=$pasatiempo3,
-			Pasatiempo4=$pasatiempo4,									
-			Observaciones='$observaciones'
-			WHERE NControl=$ncontrol";
+	$sql = "UPDATE alumnos SET 
+			nombre='$nombre',
+			especialidad=$especialidad,
+			grado=$grado,
+			grupo=$grupo,
+			turno=$turno,
+			pasatiempo1=$pasatiempo1,
+			pasatiempo2=$pasatiempo2,
+			pasatiempo3=$pasatiempo3,
+			pasatiempo4=$pasatiempo4,									
+			observaciones='$observaciones'
+			WHERE ncontrol=$ncontrol";
 		
 	// Inserta Un Registro, Regresa 1 Si Inserto Correctamente y 0 En Caso Contrario
 	$actualizo = mysqli_query($conexion, $sql);
