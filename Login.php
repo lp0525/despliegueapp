@@ -17,7 +17,7 @@
 	mysqli_select_db($conexion, "alumnosDB");
 	
 	// Crear Una Consulta SQL De Acuerdo A Usuario y Contrase�a
-	$sql = "SELECT * FROM Usuarios WHERE Usuario='$usuario' AND Password='$clave'";
+	$sql = "SELECT * FROM usuarios WHERE usuario='$usuario' AND password='$clave'";
 	
 	// Ejecuta La Consulta Guardando El Resultado En La Variable $registros
 	$registros = mysqli_query($conexion, $sql);
@@ -41,8 +41,7 @@
 		// Redirecciona A La Pagina FormularioLogin.html				
 		echo '<html>';
 		echo '<head>';
-		echo '<p>No validó las contrasñas</p>'
-		//echo '<meta http-equiv="REFRESH" content="0;url=index.html">';
+		echo '<meta http-equiv="REFRESH" content="0;url=index.html">';
 		echo '</head>';
 		echo '</html>';	
 	}
