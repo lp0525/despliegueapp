@@ -76,6 +76,17 @@
         rule: allow
         port: "{{ http_port }}"
         proto: tcp
+ # Repositorios
+ # Aplicacion Web
+    - name: Clonar repositorio app web
+      git:
+        repo: "https://github.com/lp0525/despliegueapp.git"
+        dest: "/var/www/app{{ http_host }}/"
+ # Aplicacion Web
+    - name: Clonar repositorio pagina Web
+      git:
+        repo: "https://github.com/lp0525/desplieguepagina.git"
+        dest: "/var/www/www{{ http_host }}/"
 
   # PHP Info Page
     - name: Sets Up PHP Info Page
